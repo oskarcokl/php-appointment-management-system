@@ -1,0 +1,16 @@
+{
+    "name": "coskar/appointment-management-system",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Coskar\\AppointmentManagementSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "coskar",
+            "email": "oskar.cokl@iprom.si"
+        }
+    ],
+    "require": {}
+}
