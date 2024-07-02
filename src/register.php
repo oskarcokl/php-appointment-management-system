@@ -39,9 +39,9 @@ if (isset($_POST['register'])) {
         <input type="text" name="surname" id="surname">
         <label for="phone">Phone number:</label>
         <input type="tel" id="phone" name="phone">
-        <label for="email">E-mail</label>
+        <label for="email">E-mail:</label>
         <input type="email" id="email" name="email">
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password">
         <button name="register" type="submit">register</button>
     </form>
