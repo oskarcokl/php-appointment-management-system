@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     if (isset($_POST) && isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST['email'];
 

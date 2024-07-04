@@ -1,7 +1,11 @@
 <?php
 
+session_start();
 
-echo array_key_exists('logOut', $_POST) . "\n";
+if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
+    header('Location: login.php');
+}
+
 if (isset($_POST) && array_key_exists('logOut', $_POST)) {
     unset($_SESSION['loggedin']);
     unset($_SESSION['id']);
