@@ -12,8 +12,11 @@
             "email": "oskar.cokl@iprom.si"
         }
     ],
-    "require": {},
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
     "scripts": {
-        "serve": "php -S localhost:8000 -t src"
+        "serve": "php -S localhost:8000 -t src",
+        "init_db": "php init_db.php"
     }
 }
