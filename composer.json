@@ -12,5 +12,8 @@
             "email": "oskar.cokl@iprom.si"
         }
     ],
-    "require": {}
+    "require": {},
+    "scripts": {
+        "serve": "php -S localhost:8000 -t src"
+    }
 }
