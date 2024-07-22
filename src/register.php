@@ -1,5 +1,16 @@
 <?php
-$db = pg_connect("dbname=scheduling");
+require_once '../vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+// NOTE: Maybe there is a better way to do this but I don't know about it.
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$dbName = $_ENV['DB_NAME'];
+
+
+$db = pg_connect("dbname=$dbName");
 
 if (!$db) {
     die("DB Connection failed");
